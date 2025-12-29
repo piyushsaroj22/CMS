@@ -828,7 +828,7 @@ footer hr {
 
     /* CONTACT */
     .contact-container {
-        gap: 30px;
+        gap: 16px;
     }
     
 }
@@ -889,7 +889,7 @@ footer hr {
     /* CONTACT BOX */
     .left-contact-box,
     .right-contact-box {
-        padding: 20px;
+        padding: 16px;
     }
 
     /* FORM */
