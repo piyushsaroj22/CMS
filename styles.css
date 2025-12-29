@@ -516,9 +516,9 @@ nav ul li a.active::after {
 }
 
 /* Preferred Date → neeche gap */
-.right-contact-box input[type="date"] {
+/* .right-contact-box input[type="date"] {
     margin-bottom: 16px;
-}
+} */
 
 /* Additional Details textarea spacing */
 .right-contact-box textarea {
