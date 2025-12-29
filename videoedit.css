@@ -1,0 +1,47 @@
+.gallery video {
+    width: 100%;
+    border-radius: 14px;
+    cursor: pointer;
+    background: #000;
+    transition: 0.3s ease;
+}
+
+.gallery video:hover {
+    transform: scale(1.03);
+}
+
+/* Aspect ratios */
+.landscape-gallery video {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.portrait-gallery video {
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+}
+
+/* Lightbox */
+#lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#lightbox video {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
