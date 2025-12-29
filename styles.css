@@ -829,6 +829,7 @@ footer hr {
     /* CONTACT */
     .contact-container {
         gap: 16px;
+        padding: 0px;
     }
     
 }
