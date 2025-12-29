@@ -21,7 +21,7 @@ body {
 /* =============== HEADER / NAVBAR =============== */
 
 header {
-    padding: 10px 0;
+    padding: 4px 0;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -853,7 +853,7 @@ footer hr {
 
     /* HEADER */
     header {
-        padding: 8px 0;
+        padding: 2px 0;
     }
 
     .logo {
