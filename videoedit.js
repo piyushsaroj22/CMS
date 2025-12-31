@@ -20,6 +20,8 @@ const videos = [
     // 🎬 SHORT FILM (YouTube)
     { src: 'assets/reels&videoediting/ShortFilm/video3.mp4', type: 'shortfilm', youtubeId: 'quNx_aXvXdk' },
     { src: 'assets/reels&videoediting/ShortFilm/video4.mp4', type: 'shortfilm', youtubeId: '1FvH4AfJH2s' },
+    { src: 'assets/reels&videoediting/ShortFilm/video5.mp4', type: 'shortfilm', youtubeId: 'KOa2P74WQZE' },
+    { src: 'assets/reels&videoediting/ShortFilm/video6.mp4', type: 'shortfilm', youtubeId: 'VRIq7VdI6R4' },
 
 ];
 
