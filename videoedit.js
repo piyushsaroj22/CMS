@@ -9,8 +9,8 @@ const videos = [
     { src: 'assets/reels&videoediting/video4.mp4', type: 'landscape' },
     { src: 'assets/reels&videoediting/video5.mp4', type: 'landscape' },
     { src: 'assets/reels&videoediting/video6.mp4', type: 'landscape' },
-    // { src: 'assets/reels&videoediting/video7.mp4', type: 'landscape' },
-    // { src: 'assets/reels&videoediting/video8.mp4', type: 'landscape' },
+    { src: 'assets/reels&videoediting/video7.mp4', type: 'landscape' },
+    { src: 'assets/reels&videoediting/video8.mp4', type: 'landscape' },
     { src: 'assets/reels&videoediting/video9.mp4', type: 'portrait' },
     
 
