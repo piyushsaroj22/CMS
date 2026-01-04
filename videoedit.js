@@ -12,17 +12,16 @@ const videos = [
     { src: 'assets/reels&videoediting/video5.mp4', type: 'landscape' },
     { src: 'assets/reels&videoediting/video6.mp4', type: 'landscape' },
 
-    { src: 'assets/reels&videoediting/ShortFilm/video1.mp4', type: 'shortfilm' },
-    { src: 'assets/reels&videoediting/ShortFilm/video2.mp4', type: 'shortfilm' },
+    { src: 'assets/ShortFilm/video1.mp4', type: 'shortfilm' },
+    { src: 'assets/ShortFilm/video2.mp4', type: 'shortfilm' },
 
     { src: 'assets/reels&videoediting/video9.mp4', type: 'portrait' },
 
     // 🎬 SHORT FILM (YouTube)
-    { src: 'assets/reels&videoediting/ShortFilm/video3.mp4', type: 'shortfilm', youtubeId: 'quNx_aXvXdk' },
-    { src: 'assets/reels&videoediting/ShortFilm/video4.mp4', type: 'shortfilm', youtubeId: '1FvH4AfJH2s' },
-    { src: 'assets/reels&videoediting/ShortFilm/video5.mp4', type: 'shortfilm', youtubeId: 'KOa2P74WQZE' },
-    { src: 'assets/reels&videoediting/ShortFilm/video6.mp4', type: 'shortfilm', youtubeId: 'VRIq7VdI6R4' },
-
+    { src: 'assets/ShortFilm/video3.mp4', type: 'shortfilm', youtubeId: 'quNx_aXvXdk' },
+    { src: 'assets/ShortFilm/video4.mp4', type: 'shortfilm', youtubeId: '1FvH4AfJH2s' },
+    { src: 'assets/ShortFilm/video5.mp4', type: 'shortfilm', youtubeId: 'KOa2P74WQZE' },
+    { src: 'assets/ShortFilm/video6.mp4', type: 'shortfilm', youtubeId: 'VRIq7VdI6R4' },
 ];
 
 
@@ -72,11 +71,9 @@ videos.forEach(video => {
 
     if (video.type === 'landscape') {
         landscapeGallery.appendChild(vid);
-    } 
-    else if (video.type === 'portrait') {
+    } else if (video.type === 'portrait') {
         portraitGallery.appendChild(vid);
-    } 
-    else if (video.type === 'shortfilm') {
+    } else if (video.type === 'shortfilm') {
         shortFilmGallery.appendChild(vid);
     }
 });
