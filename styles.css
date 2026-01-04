@@ -23,7 +23,6 @@ body {
 /* =============== HEADER / NAVBAR =============== */
 
 header {
-    padding: 4px 0;
     padding: 4px 0px;
     position: sticky;
     top: 0;
@@ -999,3 +998,25 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
         font-size: 30px;
     }
 }
+
+/* .yt-video {
+    position: relative;
+    cursor: pointer;
+}
+
+.yt-video img {
+    width: 100%;
+    border-radius: 14px;
+    display: block;
+}
+
+.play-btn {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-size: 64px;
+    color: #fff;
+    background: rgba(0,0,0,0.35);
+    border-radius: 14px;
+} */
