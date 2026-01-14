@@ -328,6 +328,7 @@ nav ul li a.active::after {
 .project-card h3 {
     color: #eaeaea;
     font-size: 18px;
+    font-weight: 900;
 }
 
 .project-card p {
