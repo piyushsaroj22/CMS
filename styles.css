@@ -23,7 +23,7 @@ body {
 /* =============== HEADER / NAVBAR =============== */
 
 header {
-    padding: 4px 0px;
+    padding: 0px 0px;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -50,6 +50,40 @@ header {
     font-weight: 600;
 }
 
+/* ========== CMS LOGO : MINIMAL SIGNATURE + GRADIENT ========== */
+
+.logo-signature-gradient {
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: 10px;
+
+    /* signature / artistic but clean */
+    font-family: 'Poppins', 'Segoe Script', 'Brush Script MT', cursive;
+
+    /* blue → purple gradient */
+    background: linear-gradient(90deg, #4f80ff, #9b5cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* soft cinematic glow */
+    text-shadow:
+        0 0 12px rgba(79, 128, 255, 0.45),
+        0 0 24px rgba(155, 92, 255, 0.25);
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* hover = premium glow */
+.logo-signature-gradient:hover {
+    transform: translateY(-1px);
+    text-shadow:
+        0 0 18px rgba(79, 128, 255, 0.75),
+        0 0 36px rgba(155, 92, 255, 0.55);
+}
+
+
+
 
 /* NAV UL */
 
@@ -75,14 +109,14 @@ nav ul li a {
 /* HOVER TEXT COLOR */
 
 nav ul li a:hover {
-    color: #4f80ff;
+    color: linear-gradient(90deg, #4f80ff, #9b5cff);
 }
 
 
 /* ACTIVE TEXT COLOR */
 
 nav ul li a.active {
-    color: #4f80ff;
+    color: linear-gradient(90deg, #4f80ff, #9b5cff);
 }
 
 
@@ -95,7 +129,7 @@ nav ul li a::after {
     bottom: 0;
     width: 0%;
     height: 2px;
-    background: #4f80ff;
+    background: linear-gradient(90deg, #4f80ff, #9b5cff);
     transition: width 0.3s ease;
 }
 
@@ -183,9 +217,9 @@ nav ul li a.active::after {
 
 /* Main Heading */
 
-.home-content h2 {
-    font-size: 76px;
-    line-height: 0.8;
+.home-text {
+    font-size: 60px;
+    line-height: 1;
     /* 🔥 line gap (2 lines ke beech) */
     margin-bottom: 24px;
     /* 🔥 heading aur paragraph ka gap */
@@ -223,7 +257,7 @@ nav ul li a.active::after {
 /* BUTTON */
 
 .btn {
-    background: #4f80ff;
+    background: linear-gradient(90deg, #4f80ff, #9b5cff);
     color: #fff;
     padding: 10px 18px;
     border-radius: 8px;
@@ -235,9 +269,9 @@ nav ul li a.active::after {
 }
 
 .btn:hover {
-    background: #3e6be0;
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.08);
     box-shadow: 0 10px 26px rgba(79, 128, 255, 0.28);
+
 }
 
 
@@ -284,12 +318,13 @@ nav ul li a.active::after {
     object-fit: cover;
     display: block;
 }
-/* .project-image video {
+
+.project-image video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-} */
+}
 
 .project-overlay {
     position: absolute;
@@ -533,7 +568,9 @@ nav ul li a.active::after {
 .right-contact-box .btn-primary {
     grid-column: 1 / -1;
     justify-self: flex-start;
-    background: linear-gradient(135deg, #4f8cff, #3a6bff);
+    background: linear-gradient(90deg, #4f80ff, #9b5cff);
+    transform: translateY(-3px) scale(1.08);
+    box-shadow: 0 10px 26px rgba(79, 128, 255, 0.28);
     border: none;
     border-radius: 8px;
     padding: 12px 26px;
@@ -753,6 +790,7 @@ nav ul li a.active::after {
 @media (min-width: 901px) and (max-width: 1200px) {
     .gallery {
         grid-template-columns: repeat(3, 1fr);
+        padding: 0px 20px;
     }
 }
 
@@ -849,7 +887,7 @@ footer hr {
 
 @media (max-width: 1024px) {
     .nav-container {
-        padding: 6px 20px;
+        padding: 0px 20px;
     }
 
     nav ul {
@@ -962,11 +1000,11 @@ footer hr {
     }
 
     #home h2 {
-        font-size: 26px;
+        font-size: 30px;
     }
 
     #home p {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     /* PROJECT IMAGE */
@@ -1062,3 +1100,72 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
     background: rgba(0,0,0,0.35);
     border-radius: 14px;
 } */
+
+/* ================= PROJECT VIDEO (IMAGE JESA HI) ================= */
+
+.project-video {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    aspect-ratio: 14 / 6;
+    /* same as image */
+}
+
+/* Mobile ratio */
+@media (max-width: 468px) {
+    .project-video {
+        aspect-ratio: 10 / 6;
+    }
+}
+
+.project-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* overlay already tumhare CSS me hai
+   isliye reuse kar rahe hain */
+.project-video .project-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 1;
+}
+
+/* hover same as image */
+.project-card:hover .project-video .project-overlay {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.whatsapp-float {
+    /* position: fixed; */
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    z-index: 9999;
+    transition: 0.25s ease;
+}
+
+.whatsapp-float img {
+    width: 30px;
+    height: 30px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    box-shadow: 0 14px 36px rgba(0,0,0,0.35);
+}
