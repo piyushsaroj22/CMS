@@ -342,14 +342,15 @@
     <script src="script1.js"></script>
     <script>
         if ("serviceWorker" in navigator) {
-            window.addEventListener("load", () => {
-                navigator.serviceWorker
-                    .register("/service-worker.js")
-                    .then(() => console.log("Service Worker Registered"))
-                    .catch(err => console.log("SW error:", err));
-            });
+          window.addEventListener("load", () => {
+            navigator.serviceWorker
+              .register("./service-worker.js")   <!-- ✅ CHANGE -->
+              .then(() => console.log("Service Worker Registered"))
+              .catch(err => console.log("SW error:", err));
+          });
         }
     </script>
+
 </body>
 
 </html>
