@@ -11,6 +11,8 @@
 body {
     background-color: #000000;
     color: #d4d4d4;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* body {
