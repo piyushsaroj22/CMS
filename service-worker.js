@@ -1,30 +1,34 @@
 const CACHE_NAME = "cms-cache-v1";
 
 const FILES_TO_CACHE = [
-  "/",
-  "/index.html",
-  "/styles.css",
-  "/script.js",
-  "/videoedit.js",
-  "/short-film.js",
+  "./",
+  "./index.html",
+  "./styles.css",
+  "./script.js",
+  "./script1.js",
+  "./scriptform.js",
+  "./videoedit.js",
+  "./short-film.js",
 
   // Pages
-  "/festival.html",
-  "/streetphotography.html",
-  "/architecturephotography.html",
-  "/carsphotography.html",
-  "/productshoot.html",
-  "/modelshoot.html",
-  "/event&concert.html",
-  "/cinematography.html",
-  "/reels&videoedit.html",
+  "./festival.html",
+  "./streetphotography.html",
+  "./architecturephotography.html",
+  "./carsphotography.html",
+  "./productshoot.html",
+  "./modelshoot.html",
+  "./event&concert.html",
+  "./cinematography.html",
+  "./reels&videoedit.html",
+  "./short-film.html",
 
-  // Thumbnails (important)
-  "/assets/home.jpg",
-  "/assets/thumbnail/fastival-thumbnail.jpg",
-  "/assets/thumbnail/street-photography-thumbnail.jpg",
-  "/assets/thumbnail/architecture-phoygraphy-thumbnail.jpg"
+  // Assets
+  "./assets/home.jpg",
+  "./assets/thumbnail/fastival-thumbnail.jpg",
+  "./assets/thumbnail/street-photography-thumbnail.jpg",
+  "./assets/thumbnail/architecture-phoygraphy-thumbnail.jpg"
 ];
+
 
 self.addEventListener("install", event => {
   event.waitUntil(
@@ -56,3 +60,4 @@ self.addEventListener("activate", event => {
     )
   );
 });
+
